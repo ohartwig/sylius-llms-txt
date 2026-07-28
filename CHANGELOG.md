@@ -1,3 +1,16 @@
+## [1.1.1](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.0...v1.1.1) (2026-07-28)
+
+### :bug: Fixes
+
+* stop product and channel names from forging structure in llms.txt ([94e16fa](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/94e16faa6c95814dc889574ffc040bef9f61f372))
+
+### :repeat: Chores
+
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.26.0 ([3e97afb](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/3e97afb259158f7c74f7d9c1df47715237079298))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.26.1 ([8ac21c0](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/8ac21c0a3404cbc88594bc09cb6126d408620ada))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.26.2 ([f958b98](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/f958b98b03d3dc328e5eb641e138af611137b0c4))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.26.3 ([4d6cd89](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/4d6cd89d73b9f8f88c50d05f7e8f29ad8d29bb68))
+
 ## [1.1.0](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.0.0...v1.1.0) (2026-07-28)
 
 ### :sparkles: Features
