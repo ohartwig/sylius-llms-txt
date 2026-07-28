@@ -1,3 +1,15 @@
+## [1.1.0](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.0.0...v1.1.0) (2026-07-28)
+
+### :sparkles: Features
+
+* add REUSE-compliant licensing metadata and contributor docs ([3f95e5c](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/3f95e5ce5605bd49fe90c42cb5e6cad9157bebd1))
+
+### :repeat: Chores
+
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.24.2 ([0d52986](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/0d529867e19d56bbac0b5af91bfac1e255e9a9e6))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.25.0 ([2557451](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/2557451d90dfabb90e8499b079ddbab563d12d2b))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.25.1 ([488b279](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/488b279ffc456cd57080193476c44780c5473979))
+
 ## 1.0.0 (2026-07-28)
 
 ### :sparkles: Features
