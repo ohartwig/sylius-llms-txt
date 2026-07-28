@@ -8,6 +8,7 @@ declare(strict_types=1);
 namespace Koh\SyliusLlmsTxt\Generator;
 
 use Koh\SyliusAgentContracts\Context\AgentContext;
+use Koh\SyliusAgentContracts\Model\MarkdownText;
 use Koh\SyliusAgentContracts\Registry\AgentEndpointRegistry;
 use Koh\SyliusAgentContracts\Registry\LlmsTxtSectionRegistry;
 
@@ -32,7 +33,10 @@ final class LlmsTxtGenerator
 
     public function generate(AgentContext $context): string
     {
-        $out = '# '.($context->channel->getName() ?? 'Shop')."\n";
+        // Channel names are operator-set, but the same rule applies as for
+        // product names: a newline here ends the H1 and opens the document to
+        // whatever follows. See MarkdownText.
+        $out = '# '.MarkdownText::inline($context->channel->getName() ?? 'Shop')."\n";
 
         if (null !== $this->summary && '' !== $this->summary) {
             $out .= "\n> ".$this->summary."\n";

@@ -8,6 +8,7 @@ declare(strict_types=1);
 namespace Koh\SyliusLlmsTxt\Generator;
 
 use Koh\SyliusAgentContracts\Context\AgentContext;
+use Koh\SyliusAgentContracts\Model\MarkdownText;
 use Sylius\Component\Core\Model\ProductInterface;
 use Sylius\Component\Core\Repository\ProductRepositoryInterface;
 
@@ -69,7 +70,12 @@ final class LlmsFullGenerator
     private function render(ProductInterface $product, AgentContext $context): string
     {
         $translation = $product->getTranslation($context->localeCode);
-        $out = "\n### ".($translation->getName() ?? (string) $product->getCode())."\n";
+
+        // The description below is already flattened by the strip_tags/\s+ pass.
+        // The name was not, and it is the more exposed of the two: it reaches
+        // here straight from the catalogue, and a newline in it ends the heading
+        // and lets the remainder open sections of its own.
+        $out = "\n### ".MarkdownText::inline($translation->getName() ?? (string) $product->getCode())."\n";
 
         $slug = $translation->getSlug();
         if (null !== $slug && '' !== $slug) {

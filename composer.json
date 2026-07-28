@@ -23,7 +23,7 @@
         "source": "https://github.com/ole-hartwig/sylius-llms-txt"
     },
     "require": {
-        "koh/sylius-agent-contracts": "^1.1",
+        "koh/sylius-agent-contracts": "^1.3.1",
         "koh/sylius-markdown": "^1.0",
         "php": "^8.2",
         "sylius/sylius": "^2.0",
