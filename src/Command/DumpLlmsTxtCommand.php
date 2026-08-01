@@ -56,6 +56,8 @@ final class DumpLlmsTxtCommand extends Command
         $io = new SymfonyStyle($input, $output);
 
         $code = $input->getOption('channel');
+        // VALUE_NONE, so getOption() yields exactly true or false.
+        $print = true === $input->getOption('print');
         $channels = [];
         if (\is_string($code) && '' !== $code) {
             $channel = $this->channelRepository->findOneByCode($code);
@@ -78,7 +80,7 @@ final class DumpLlmsTxtCommand extends Command
             $short = $this->generator->generate($context);
             $full = $this->fullGenerator->generate($context);
 
-            if ($input->getOption('print')) {
+            if ($print) {
                 $output->writeln($short);
 
                 continue;

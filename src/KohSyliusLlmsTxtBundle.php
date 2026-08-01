@@ -56,7 +56,7 @@ final class KohSyliusLlmsTxtBundle extends AbstractBundle
     }
 
     /**
-     * @param array<string, mixed> $config
+     * @param array<mixed> $config
      */
     public function loadExtension(array $config, ContainerConfigurator $container, ContainerBuilder $builder): void
     {
@@ -75,7 +75,7 @@ final class KohSyliusLlmsTxtBundle extends AbstractBundle
 
         $container->import('../config/services.php');
 
-        if (!($taxons['enabled'] ?? true)) {
+        if (false === ($taxons['enabled'] ?? true)) {
             $builder->removeDefinition(Provider\TaxonSectionProvider::class);
         }
     }

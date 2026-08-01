@@ -48,7 +48,7 @@ final class TaxonSectionProvider implements LlmsTxtSectionProviderInterface
 
         $links = [];
         foreach ($this->taxonRepository->findChildren($rootCode, $context->localeCode) as $taxon) {
-            if (!$taxon instanceof TaxonInterface || !$taxon->isEnabled()) {
+            if (!$taxon->isEnabled()) {
                 continue;
             }
 
