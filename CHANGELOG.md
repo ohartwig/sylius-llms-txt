@@ -1,3 +1,17 @@
+## [1.1.3](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.2...v1.1.3) (2026-08-01)
+
+### :bug: Fixes
+
+* **phpstan:** resolve all 5 level-8 findings without suppressions ([2423110](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/242311026efb6532d8e3e7e6123bbba40bd36ac4))
+
+### :zap: Refactor
+
+* **phpstan:** use the shared level-8 standard ([88f7a9a](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/88f7a9a7b5d34f210cd7c7709bc9882e1b3ea372))
+
+### :repeat: Chores
+
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.32.2 ([14e2fe3](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/14e2fe386cf59785adfc234b6dc8201156146fea))
+
 ## [1.1.2](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.1...v1.1.2) (2026-08-01)
 
 ### :repeat: Chores
