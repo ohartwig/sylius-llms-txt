@@ -32,6 +32,38 @@ final class LlmsTxtGeneratorTest extends TestCase
         self::assertStringContainsString('> Cigars, pipe tobacco and accessories.', $body);
     }
 
+    /**
+     * The intro is prose and sits between the blockquote and the first section.
+     * It is multi-line by design, so unlike the title it is not flattened.
+     */
+    public function testTheIntroFollowsTheSummaryAndPrecedesTheSections(): void
+    {
+        $body = $this->generate(
+            sections: [$this->section('Categories', 100)],
+            summary: 'Cigars, pipe tobacco and accessories.',
+            intro: "Family-run since 1904.\nShipping across the EU.",
+        );
+
+        self::assertStringContainsString("Family-run since 1904.\nShipping across the EU.", $body);
+        self::assertGreaterThan(strpos($body, '> Cigars'), strpos($body, 'Family-run'));
+        self::assertLessThan(strpos($body, '## Categories'), strpos($body, 'Family-run'));
+    }
+
+    /**
+     * Not merely "renders as nothing": an empty intro must not leave the blank
+     * line behind either, or the document grows a gap every operator who left
+     * the option unset would have to explain.
+     */
+    public function testAnEmptyIntroAddsNothing(): void
+    {
+        $sections = [$this->section('Categories', 100)];
+
+        self::assertSame(
+            $this->generate(sections: $sections),
+            $this->generate(sections: $sections, intro: ''),
+        );
+    }
+
     public function testSectionsAppearInPriorityOrder(): void
     {
         $body = $this->generate(sections: [
@@ -125,12 +157,13 @@ final class LlmsTxtGeneratorTest extends TestCase
         array $endpoints = [],
         ?string $summary = null,
         bool $listEndpoints = true,
+        ?string $intro = null,
     ): string {
         $generator = new LlmsTxtGenerator(
             new LlmsTxtSectionRegistry($sections),
             new AgentEndpointRegistry([$this->endpointProvider($endpoints)]),
             $summary,
-            null,
+            $intro,
             $listEndpoints,
         );
 

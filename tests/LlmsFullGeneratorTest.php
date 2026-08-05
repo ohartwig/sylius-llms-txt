@@ -82,6 +82,86 @@ final class LlmsFullGeneratorTest extends TestCase
         self::assertStringContainsString('…', $body);
     }
 
+    /**
+     * Not every shop fills in the short description. Falling back to the long
+     * one is the difference between a product entry an agent can reason about
+     * and a bare heading with a URL under it.
+     */
+    public function testTheLongDescriptionIsUsedWhenThereIsNoShortOne(): void
+    {
+        $body = $this->generate([$this->productWithDescriptions(null, '<p>Die lange Beschreibung.</p>')]);
+
+        self::assertStringContainsString('Die lange Beschreibung.', $body);
+        self::assertStringNotContainsString('<p>', $body);
+    }
+
+    /** A short description of nothing but whitespace is not a description. */
+    public function testAWhitespaceOnlyShortDescriptionFallsBackToTheLongOne(): void
+    {
+        $body = $this->generate([$this->productWithDescriptions("  \n ", 'Die lange Beschreibung.')]);
+
+        self::assertStringContainsString('Die lange Beschreibung.', $body);
+    }
+
+    public function testAProductWithNoDescriptionAtAllRendersHeadingAndUrlOnly(): void
+    {
+        $body = $this->generate([$this->productWithDescriptions(null, null)]);
+
+        self::assertStringContainsString('### Produkt 1', $body);
+        self::assertStringContainsString('https://shop.example.com/de_DE/products/produkt-1', $body);
+        self::assertSame(
+            "### Produkt 1\n\nhttps://shop.example.com/de_DE/products/produkt-1",
+            trim(substr($body, (int) strpos($body, '### Produkt 1'))),
+        );
+    }
+
+    /**
+     * A product with no slug has no page. Rendering the URL anyway produces
+     * `/de_DE/products/` — the catalogue index — under a specific product's
+     * heading, and an agent following it reports back on the wrong page.
+     */
+    public function testAProductWithoutASlugGetsNoUrl(): void
+    {
+        $body = $this->generate([$this->productWithDescriptions(null, null, slug: null)]);
+
+        self::assertStringContainsString('### Produkt 1', $body);
+        self::assertStringNotContainsString('/de_DE/products/', $body);
+    }
+
+    public function testAProductWithAnEmptySlugGetsNoUrl(): void
+    {
+        $body = $this->generate([$this->productWithDescriptions(null, null, slug: '')]);
+
+        self::assertStringNotContainsString('/de_DE/products/', $body);
+    }
+
+    /** Without a translated name the code is all an agent has to go on. */
+    public function testAnUntranslatedProductFallsBackToItsCode(): void
+    {
+        $body = $this->generate([$this->productWithDescriptions(null, null, name: null)]);
+
+        self::assertStringContainsString('### CODE-1', $body);
+    }
+
+    private function productWithDescriptions(
+        ?string $short,
+        ?string $long,
+        ?string $slug = 'produkt-1',
+        ?string $name = 'Produkt 1',
+    ): ProductInterface {
+        $translation = $this->createMock(ProductTranslationInterface::class);
+        $translation->method('getName')->willReturn($name);
+        $translation->method('getSlug')->willReturn($slug);
+        $translation->method('getShortDescription')->willReturn($short);
+        $translation->method('getDescription')->willReturn($long);
+
+        $product = $this->createMock(ProductInterface::class);
+        $product->method('getTranslation')->willReturn($translation);
+        $product->method('getCode')->willReturn('CODE-1');
+
+        return $product;
+    }
+
     /** @param list<ProductInterface> $products */
     private function generate(array $products, int $maxProducts = 200, int $maxBytes = 1_048_576): string
     {
