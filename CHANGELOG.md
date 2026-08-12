@@ -1,3 +1,31 @@
+## [1.1.5](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.4...v1.1.5) (2026-08-12)
+
+### :bug: Fixes
+
+* **deps:** require psr/cache and ext-mbstring, drop koh/sylius-markdown ([68725df](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/68725df49deb94db36a9e64c56977a3112969d45))
+* **deps:** update dependency sylius/sylius to ^2.0.18 [security] ([de37642](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/de37642781d5e4facd4fe7489164ae965838fdc3))
+
+### :white_check_mark: Tests
+
+* close the last gaps in both generators ([0907052](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/0907052948ccac7d05c6f1df3f5229e15982745f))
+* cover the bundle configuration and the api-catalog entry ([94a2e15](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/94a2e150e9af86b5361dea84762672e29ebe8847))
+* cover the llms.txt controller ([ce75cd6](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/ce75cd6ee8b8a4bef2bbd9b48ad8b4602540e9bd))
+* cover the llms.txt dump command ([2c69c65](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/2c69c65df334de421cb0c285dfd64af0fcf1ae42))
+* cover the taxon section provider ([1b38f10](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/1b38f10423851d89721701a00a6a8ef3d471c345))
+* read the whole suite in the coverage gate ([ce2905d](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/ce2905da580cc0b4c7907f7b4f8576546e21ee2e))
+
+### :repeat: Continuous Integrations
+
+* follow the composed pipeline on [@1](https://git.ole-hartwig.eu/1) instead of an exact pin ([0f78a02](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/0f78a0225972e2818124664c7fa5993fdb53f108))
+
+### :repeat: Chores
+
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.36.12 ([f03ad41](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/f03ad419f63f0c3d437d3cacada870b8945b7226))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.36.5 ([364870d](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/364870d6f6c05ca4d3748e1ece582f7a74d878d4))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.36.6 ([af8d156](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/af8d156be9b7ec60186e4ea0988dab9696446c46))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.36.8 ([3879376](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/3879376d7d9f0697f55381e43f45743e088d7d1d))
+* **deps:** update dependency phpunit/phpunit to ^11.5.50 [security] ([540a2c9](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/540a2c90e4ff1da8c8a020427ac48f62b9c75678))
+
 ## [1.1.4](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.3...v1.1.4) (2026-08-03)
 
 ### :repeat: Chores
