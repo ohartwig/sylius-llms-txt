@@ -1,3 +1,14 @@
+## [1.1.6](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.5...v1.1.6) (2026-08-12)
+
+### :bug: Fixes
+
+* **deps:** update dependency php to ^8.5.9 ([fc194dd](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/fc194dd913d97d50d64ed52efee7949ced984f0f))
+
+### :repeat: Chores
+
+* **deps:** update dependency symfony/cache to ^7.4.16 ([3aa5195](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/3aa519595336fb9219eb00530704ba9ad89c7ea8))
+* **deps:** update phpstan packages ([b55c818](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/b55c818c0c0a687a5c878d69d475e6eee14cfb73))
+
 ## [1.1.5](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.4...v1.1.5) (2026-08-12)
 
 ### :bug: Fixes
