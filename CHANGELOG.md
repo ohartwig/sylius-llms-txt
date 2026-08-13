@@ -1,3 +1,13 @@
+## [1.1.7](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.6...v1.1.7) (2026-08-13)
+
+### :bug: Fixes
+
+* **deps:** update dependency sylius/sylius to ^2.2.8 ([bb49352](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/bb49352e8cb12837ccf88ffe0a9dfdd54cec088b))
+
+### :repeat: Chores
+
+* **deps:** update dependency phpunit/phpunit to ^11.5.56 ([2051860](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/205186048075c33b0e02de42fd72da76a08a4e47))
+
 ## [1.1.6](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.5...v1.1.6) (2026-08-12)
 
 ### :bug: Fixes
