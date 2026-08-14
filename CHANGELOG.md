@@ -1,3 +1,9 @@
+## [1.1.8](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.7...v1.1.8) (2026-08-14)
+
+### :bug: Fixes
+
+* allow the infection extension installer plugin ([af38d21](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/af38d21b00ccfc1552007d901a51755714e19041))
+
 ## [1.1.7](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.6...v1.1.7) (2026-08-13)
 
 ### :bug: Fixes
