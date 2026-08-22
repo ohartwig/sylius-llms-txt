@@ -1,3 +1,9 @@
+## [1.1.11](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.10...v1.1.11) (2026-08-22)
+
+### :repeat: Chores
+
+* **deps:** update dependency symfony/cache to ^7.4.17 ([8f7b922](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/8f7b922cfca9e076ce2332904594faf03227a058))
+
 ## [1.1.10](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.9...v1.1.10) (2026-08-22)
 
 ### :repeat: Chores
