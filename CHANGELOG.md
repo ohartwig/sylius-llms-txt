@@ -1,3 +1,9 @@
+## [1.1.18](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.17...v1.1.18) (2026-09-02)
+
+### :repeat: Chores
+
+* **repo-templates:** sync ([7c706eb](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/7c706eb93ad178f5ddc28d24c6b6c52ae3cdb2db))
+
 ## [1.1.17](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.16...v1.1.17) (2026-09-02)
 
 ### :bug: Fixes
