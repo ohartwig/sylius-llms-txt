@@ -1,3 +1,9 @@
+## [1.1.17](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.16...v1.1.17) (2026-09-02)
+
+### :bug: Fixes
+
+* **deps:** update dependency php to ^8.5.10 ([5a70515](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/5a7051524ddfca80b2130910bf22925ae4207ce0))
+
 ## [1.1.16](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.15...v1.1.16) (2026-09-01)
 
 ### :repeat: Chores
