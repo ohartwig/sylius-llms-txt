@@ -1,3 +1,9 @@
+## [1.1.19](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.18...v1.1.19) (2026-09-03)
+
+### :bug: Fixes
+
+* **deps:** update dependency sylius/sylius to ^2.2.9 ([c8f22db](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/c8f22db36973fe742f32fe712a31b6108b98c9c9))
+
 ## [1.1.18](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.17...v1.1.18) (2026-09-02)
 
 ### :repeat: Chores
