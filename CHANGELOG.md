@@ -1,3 +1,9 @@
+## [1.1.20](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.19...v1.1.20) (2026-09-04)
+
+### :repeat: Chores
+
+* **deps:** update dependency phpstan/phpstan to ^2.2.13 ([f66da68](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/f66da687d4e541e500d02d80b0337a51220ecd0c))
+
 ## [1.1.19](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.18...v1.1.19) (2026-09-03)
 
 ### :bug: Fixes
