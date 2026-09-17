@@ -1,3 +1,9 @@
+## [1.1.24](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.23...v1.1.24) (2026-09-17)
+
+### :bug: Fixes
+
+* **deps:** update dependency psr/cache to ^3.0.0 ([3225cca](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/3225ccab4e02abcb2aef4af75ba7fc71e78de84d))
+
 ## [1.1.23](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.22...v1.1.23) (2026-09-15)
 
 ### :repeat: Chores
