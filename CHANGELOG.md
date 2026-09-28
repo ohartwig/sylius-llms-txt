@@ -1,3 +1,10 @@
+## [1.1.29](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.28...v1.1.29) (2026-09-28)
+
+### :repeat: Chores
+
+* **repo-templates:** sync ([f972765](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/f9727655dda73bce3d036f80a38c1a74c0111185))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v2.21.1 ([f8e11da](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/f8e11da404a3abfe7f83fbb6f03c5bdb74927c39))
+
 ## [1.1.28](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.27...v1.1.28) (2026-09-28)
 
 ### :repeat: Chores
