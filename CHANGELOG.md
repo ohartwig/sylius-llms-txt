@@ -1,3 +1,16 @@
+## [1.1.32](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.31...v1.1.32) (2026-10-01)
+
+### :repeat: Continuous Integrations
+
+* follow composed-default-pipelines on the rolling major tag ([5a6527d](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/5a6527d36700717af055e4ce9a6c55da940aaabd))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v2.21.19 ([b00238c](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/b00238cb5fbe353b0193764bca1e306510c1aaf1))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v2.21.18 ([7791935](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/7791935010e73ea21112628fbf171c55979aefca))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v2.21.17 ([7d45910](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/7d45910b7acd0b28b1d26cd01378a6061b63a600))
+
+### :repeat: Chores
+
+* **deps:** update dependency symfony/cache to ^7.4.20 ([cf9d5bf](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/cf9d5bf3c9b0c37fe8554b38e20146a86bdb620f))
+
 ## [1.1.31](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.30...v1.1.31) (2026-09-30)
 
 ### :bug: Fixes
