@@ -1,3 +1,9 @@
+## [1.1.33](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.32...v1.1.33) (2026-10-04)
+
+### :bug: Fixes
+
+* **deps:** accept Sylius 2.2.9 again ([77ef25b](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/77ef25be614047ef9c209733baab215ba0193e51))
+
 ## [1.1.32](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.31...v1.1.32) (2026-10-01)
 
 ### :repeat: Continuous Integrations
