@@ -1,3 +1,9 @@
+## [1.1.36](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.35...v1.1.36) (2026-10-06)
+
+### :repeat: Chores
+
+* **deps:** update dependency phpunit/phpunit to ^11.5.57 ([87c7f3e](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/87c7f3e784d776b1531d9b2c993f18a64883b81b))
+
 ## [1.1.35](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.34...v1.1.35) (2026-10-05)
 
 ### :repeat: Chores
