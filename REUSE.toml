@@ -1,7 +1,7 @@
 version = 1
 SPDX-PackageName = "koh/sylius-llms-txt"
 SPDX-PackageSupplier = "Kai Ole Hartwig <mail@ole-hartwig.eu>"
-SPDX-PackageDownloadLocation = "https://github.com/ole-hartwig/sylius-llms-txt"
+SPDX-PackageDownloadLocation = "https://github.com/ohartwig/sylius-llms-txt"
 
 # Config, metadata and repo-template files. They carry no comment syntax that
 # survives their own tooling (composer.json, JSON-like configs), are generated
@@ -22,6 +22,9 @@ path = [
     "SECURITY.md",
     ".well-known/security.txt",
     ".gitlab/**",
+    ".mise.toml",
+    ".gitsigners.d/**",
+    "lefthook.yml",
 ]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2026 Kai Ole Hartwig"
