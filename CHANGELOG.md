@@ -1,3 +1,10 @@
+## [1.1.39](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.38...v1.1.39) (2026-10-13)
+
+### :repeat: Chores
+
+* **reuse:** annotate the tooling files the mirror strips ([fda57d2](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/fda57d292640ec3915e834aad4e31a00336c96cd))
+* publish to GitHub and Packagist ([073c951](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/073c95180e6b40e5b1ebcb20371be325738ef947))
+
 ## [1.1.38](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.37...v1.1.38) (2026-10-09)
 
 ### :repeat: Chores
