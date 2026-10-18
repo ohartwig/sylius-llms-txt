@@ -1,3 +1,9 @@
+## [1.1.43](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.42...v1.1.43) (2026-10-18)
+
+### :bug: Fixes
+
+* admit PHP 8.3 and test the floor on it ([325869e](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/325869e62adb901110670396ce0d309798f7dc9d))
+
 ## [1.1.42](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.41...v1.1.42) (2026-10-16)
 
 ### :repeat: Chores
