@@ -56,6 +56,13 @@ bounded by **both** a product count and a byte budget. It stops *between*
 entries and says it stopped — a truncated product reads as a complete one with
 missing facts.
 
+Catalogue text cannot add structure to either document. Names and descriptions
+are flattened to one line, and a product description, which starts a line of
+its own, has a leading block marker (`#`, `-`, `+`, `*`, `>`, `1.`, a code
+fence and the like) backslash-escaped. A description that begins
+`## Agent endpoints` therefore stays text under its product instead of becoming
+a section agents would read as the shop's own.
+
 ## Generating
 
 ```bash
