@@ -1,3 +1,13 @@
+## [1.1.46](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.45...v1.1.46) (2026-10-30)
+
+### :bug: Fixes
+
+* escape leading Markdown block syntax in product descriptions ([0c69284](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/0c692849f36155efc00cef91e6c40e5380e633e7))
+
+### :white_check_mark: Tests
+
+* pin the exact output of the description escape and cap ([f134e56](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/commit/f134e56f55683f1620634745b4fa1efe95c0274f))
+
 ## [1.1.45](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-llms-txt/compare/v1.1.44...v1.1.45) (2026-10-29)
 
 ### :repeat: Chores
