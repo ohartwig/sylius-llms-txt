@@ -139,6 +139,43 @@ final class LlmsFullGeneratorTest extends TestCase
         self::assertStringContainsString("\n\\# 1 Bestseller\n", $body);
     }
 
+    /**
+     * Only the delimiter is escaped: the number and the rest of the text stay
+     * as the editor wrote them, in their place.
+     *
+     * @return iterable<string, array{string, string}>
+     */
+    public static function orderedListMarkers(): iterable
+    {
+        yield 'dot' => ['1. Wahl der Redaktion', '1\\. Wahl der Redaktion'];
+        yield 'paren, two digits' => ['12) Sorten im Set', '12\\) Sorten im Set'];
+        yield 'nine digits' => ['123456789. Stück', '123456789\\. Stück'];
+    }
+
+    #[DataProvider('orderedListMarkers')]
+    public function testAnOrderedListMarkerIsEscapedInPlace(string $description, string $expected): void
+    {
+        $body = $this->generate([$this->product(1, $description), $this->product(2, 'Zweites')]);
+
+        self::assertStringContainsString("produkt-1\n\n".$expected."\n\n### Produkt 2", $body);
+    }
+
+    /**
+     * The cap counts characters, not bytes: 500 umlauts stay whole, and a
+     * longer text keeps its first 497 characters and an ellipsis, in its own
+     * paragraph.
+     */
+    public function testTheDescriptionCapCountsCharacters(): void
+    {
+        $exact = 'A'.str_repeat('ä', 499);
+        $long = 'A'.str_repeat('ä', 495).'BCDEF';
+
+        $body = $this->generate([$this->product(1, $exact), $this->product(2, $long), $this->product(3, 'Drittes')]);
+
+        self::assertStringContainsString("produkt-1\n\n".$exact."\n\n### Produkt 2", $body);
+        self::assertStringContainsString("produkt-2\n\nA".str_repeat('ä', 495)."B…\n\n### Produkt 3", $body);
+    }
+
     /** A leading digit that is not a list marker is left alone. */
     public function testAnOrdinaryLeadingNumberIsNotEscaped(): void
     {
